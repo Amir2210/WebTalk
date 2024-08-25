@@ -1,9 +1,8 @@
 import CommentShow from "@/components/comments/comment-show";
 
-interface CommentListProps {}
+interface CommentListProps { }
 
-// TODO: Get a list of comments from somewhere
-export default function CommentList({}: CommentListProps) {
+export default function CommentList({ }: CommentListProps) {
   const topLevelComments = comments.filter(
     (comment) => comment.parentId === null
   );
