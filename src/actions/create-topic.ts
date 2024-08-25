@@ -58,6 +58,7 @@ export async function createTopic(formState: createTopicFromState, formData: For
       }
     }
   }
+  // ensuring that the content displayed on the page is always up-to-date.
   revalidatePath('/')
   redirect(paths.topicShow(topic.slug))
 
